@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/tangyb?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: tangyibo
+    password: tangyibo
+      
+extract:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@172.16.90.252:1521:ORCL
+    username: yi_bo
+    password: yi_bo
+  prefix: local_src_
+  schema: 
+      YI_BO:
+        - LY_VIEW_BMXX
+        - LY_VIEW_YHXX
+      SYS:
+        - STMT_AUDIT_OPTION_MAP   
+    

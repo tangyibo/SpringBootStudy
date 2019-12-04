@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/tangyb?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: tangyibo
+    password: tangyibo
+      
+extract:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/ws_scu_lp?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: tangyibo
+    password: tangyibo
+  prefix: local_src_
+  schema: 
+      ws_scu_lp:
+        - ws_school_user
+        - ws_school_org 
+    

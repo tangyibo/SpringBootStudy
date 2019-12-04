@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/tangyb?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: tangyibo
+    password: tangyibo
+      
+extract:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/wzu_local?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&nullCatalogMeansCurrent=true
+    username: tangyibo
+    password: tangyibo
+  prefix: local_src_
+  fetch-size: 5000
+  schema:
+    wzu_local:
+      - src_WS_ORG3
+      - src_WS_USER3

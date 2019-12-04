@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.90.210:3306/tangyb?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: tangyibo
+    password: tangyibo
+      
+extract:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://172.16.90.166:1433;DatabaseName=hqtest
+    username: hqtest
+    password: 123456
+  prefix: local_src_
+  schema: 
+      dbo:
+        - BBS_BOARD
+        - ATTENDANCE_INFO
+      guest:
+        - AGENT   
+    
